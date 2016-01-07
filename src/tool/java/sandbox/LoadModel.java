@@ -54,7 +54,7 @@ public class LoadModel {
     };
 
     public static void main(String[] argv) throws JAXBException {
-        argv = new String[] {".\\src\\tool\\resources\\test\\model.uml"};
+        argv = new String[] {".\\src\\tool\\resources\\test\\petclinic.uml"};
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 

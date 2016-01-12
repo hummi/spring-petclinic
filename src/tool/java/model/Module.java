@@ -10,7 +10,7 @@ import java.util.List;
  */
 @XmlRootElement(name="Module")
 @XmlAccessorType(XmlAccessType.FIELD)
-@Builder @NoArgsConstructor @AllArgsConstructor @ToString
+@Builder @NoArgsConstructor @AllArgsConstructor @ToString @Getter
 public class Module {
     @XmlAttribute
     private String name;

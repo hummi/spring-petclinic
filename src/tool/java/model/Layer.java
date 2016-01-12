@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.xml.bind.annotation.*;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -12,11 +11,11 @@ import java.util.Set;
  */
 @XmlRootElement(name="Layer")
 @XmlAccessorType(XmlAccessType.FIELD)
-@Builder @NoArgsConstructor @AllArgsConstructor @ToString
+@Builder @NoArgsConstructor @AllArgsConstructor @ToString @Getter
 public class Layer {
     @XmlAttribute
     private String name;
 
     @XmlElement(name="usage")
-    @Singular("usage") private Set<Layer> usageList;
+    @Singular("usage") private Set<Layer> usageList = new LinkedHashSet<>();
 }

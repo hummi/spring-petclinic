@@ -10,7 +10,7 @@ import java.util.List;
  */
 @XmlRootElement(name="System")
 @XmlAccessorType(XmlAccessType.FIELD)
-@Builder @NoArgsConstructor @AllArgsConstructor @ToString
+@Builder @NoArgsConstructor @AllArgsConstructor @ToString @Getter
 public class System {
     @XmlAttribute
     private String name;

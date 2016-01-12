@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<System name="petclinic">
+    <Module name="catalog">
+        <Layer name="web">
+            <usage name="service">
+                <usage name="repository"/>
+            </usage>
+            <usage name="model"/>
+        </Layer>
+        <Layer name="service">
+            <usage name="repository"/>
+        </Layer>
+        <Layer name="repository"/>
+    </Module>
+</System>

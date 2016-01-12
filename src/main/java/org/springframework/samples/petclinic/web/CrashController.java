@@ -15,6 +15,8 @@
  */
 package org.springframework.samples.petclinic.web;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.samples.petclinic.repository.OwnerRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,8 +32,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class CrashController {
 
+    @Autowired
+    private OwnerRepository ownerRepository;
+
     @RequestMapping(value = "/oups", method = RequestMethod.GET)
     public String triggerException() {
+        ownerRepository.findById(0);
         throw new RuntimeException("Expected: controller used to showcase what " +
             "happens when an exception is thrown");
     }

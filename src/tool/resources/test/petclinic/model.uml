@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_wxI24LJlEeWit7I87frkWw" name="petclinic">
+  <packagedElement xmi:type="uml:Model" xmi:id="_v-1awLJmEeWit7I87frkWw" name="catalog">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ynQOgLJmEeWit7I87frkWw" name="web">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_A5askLJnEeWit7I87frkWw" name="use" client="_ynQOgLJmEeWit7I87frkWw" supplier="_zwlOELJmEeWit7I87frkWw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_GPw5ULjBEeWLsbJl7kCNQg" name="use" client="_ynQOgLJmEeWit7I87frkWw" supplier="__24EoLjAEeWLsbJl7kCNQg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zwlOELJmEeWit7I87frkWw" name="service">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_W_5bgLJnEeWit7I87frkWw" name="use" client="_zwlOELJmEeWit7I87frkWw" supplier="_1kOV8LJmEeWit7I87frkWw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_MF8pkLjBEeWLsbJl7kCNQg" name="use" client="_zwlOELJmEeWit7I87frkWw" supplier="__24EoLjAEeWLsbJl7kCNQg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1kOV8LJmEeWit7I87frkWw" name="repository">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_N7YhMLjBEeWLsbJl7kCNQg" name="use" client="_1kOV8LJmEeWit7I87frkWw" supplier="__24EoLjAEeWLsbJl7kCNQg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="__24EoLjAEeWLsbJl7kCNQg" name="model"/>
+  </packagedElement>
+</uml:Model>
